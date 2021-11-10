@@ -15,4 +15,5 @@ int main()
    cout << "x = " << *ptr1 << endl;
    cout << "y = " << *ptr2 << endl;
    cout << "z = " << *ptr3 << endl;
+   // fdgfdgfdggdfgfd
 }
