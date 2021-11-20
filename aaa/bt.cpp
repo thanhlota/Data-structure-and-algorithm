@@ -4,22 +4,22 @@
 #include <fstream>
 using namespace std;
 
-// void readfromfile(std::string filename){
-//     std::ifstream fileinput{filename};
-//     if (fileinput.fail()){
-// 	std::cout << "Failed to open this file!" << std::endl;  system("pause");}
-//     else cout<<"Success!";
-//     while (!fileinput.eof())
-// 	{
-//     char temp[255];
-// 	fileinput.getline(temp, 255);
-// 	std::string line = temp;
-// 	std::cout << line << std::endl;
-// 	}
-// 	std::cout << std::endl;
-// 	fileinput.close();
-//     system("pause");
-// }
+void readfromfile(std::string filename){
+    std::ifstream fileinput{filename};
+    if (fileinput.fail()){
+	std::cout << "Failed to open this file!" << std::endl;  system("pause");}
+    else cout<<"Success!";
+    while (!fileinput.eof())
+	{
+    char temp[255];
+	fileinput.getline(temp, 255);
+	std::string line = temp;
+	std::cout << line << std::endl;
+	}
+	std::cout << std::endl;
+	fileinput.close();
+    system("pause");
+}
 // void writetofile(std::string filename){
 //     std::fstream fileOutput(filename,std::ios::out|std::ios::binary);
 
@@ -96,8 +96,7 @@ int main()
     for (int k = begin; k <= end; k++)
         cout << arr[k] << " ";
     delete[] arr;
+    // initfile("Test.txt");
     system("pause");
     return 0;
-    //    initfile("Test.txt");
-    //    system("pause");
 }
